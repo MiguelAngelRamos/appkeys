@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:keysapp/widgets/uselocalkeys/counter_button.dart';
 
 class ListKeyPage extends StatefulWidget {
   const ListKeyPage({super.key});
@@ -43,6 +44,15 @@ class _ListKeyPageState extends State<ListKeyPage> {
             decoration: InputDecoration(
               label: Text('Password')
             ),
+          ),
+          const SizedBox(height: 10),
+          if(_enabledEmail)
+          CounterButton(
+            key: Key('contador1')
+          ),
+          const SizedBox(height: 10),
+          CounterButton(
+            key: Key('contador2')
           ),
         ],
       )
