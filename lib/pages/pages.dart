@@ -1,0 +1,1 @@
+export 'package:keysapp/pages/localkeys/animated_text.dart';
