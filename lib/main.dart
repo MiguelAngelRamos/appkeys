@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: const AnimatedText()
-      home: const ListKeyPage()
+      // home: const ListKeyPage()
+      home: const NumbersPage()
     );
   }
 }
