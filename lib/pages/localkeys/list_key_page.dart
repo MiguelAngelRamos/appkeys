@@ -27,7 +27,25 @@ class _ListKeyPageState extends State<ListKeyPage> {
           )
         ]
       ),
-      body: Center(child: Text('$_enabledEmail', style: TextStyle(fontSize: 45)))
+      // body: Center(child: Text('$_enabledEmail', style: TextStyle(fontSize: 45)))
+      body: ListView(
+        padding: const EdgeInsets.all(20),
+        children: [
+          if(_enabledEmail)
+          const TextField(
+            key: Key('emailkey'),
+            decoration: InputDecoration(
+              label: Text('Email')
+            ),
+          ),
+          const TextField(
+            key: Key('passwordkey'),
+            decoration: InputDecoration(
+              label: Text('Password')
+            ),
+          ),
+        ],
+      )
     );
   }
 }
