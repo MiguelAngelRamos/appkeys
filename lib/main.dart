@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
       ),
       // home: const AnimatedText()
       // home: const ListKeyPage()
-      home: const NumbersPage()
+      // home: const NumbersPage()
+      home: const ListPage()
     );
   }
 }
