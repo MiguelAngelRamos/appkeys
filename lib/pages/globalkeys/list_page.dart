@@ -26,6 +26,7 @@ class _ListPageState extends State<ListPage> {
             },
             itemCount: 1000,
           );
+          
           if(orientation == Orientation.portrait) {
             return Column(
               children: [
@@ -39,7 +40,7 @@ class _ListPageState extends State<ListPage> {
           }
           return Row(
             children: [
-              Expanded(child: Text('LANDSCAPE', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold))),
+              const Expanded(child: Text('LANDSCAPE', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold))),
               Expanded(child: listView)
             ],
           );
